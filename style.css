@@ -1,8 +1,16 @@
 body {
-  margin: 16px;
+  margin: 24px;
   text-align: center;
 }
 
-* {
-  font-size: 2.5rem;
+.text {
+  font-size: 2rem;
+}
+
+.motto {
+  font-style: italic;
+  border-bottom: 1px solid #606c79;
+  height: 30px;
+  width: fit-content;
+  margin: 0 auto;
 }
