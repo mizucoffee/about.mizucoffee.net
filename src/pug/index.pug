@@ -1,0 +1,37 @@
+doctype html
+html(lang='ja')
+  head
+    title="about.mizucoffee.net"
+    meta(charset="UTF-8")
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
+    link(rel='stylesheet', href='//fonts.googleapis.com/earlyaccess/mplus1p.css')
+    link(rel='stylesheet', href='//cdn.rawgit.com/necolas/normalize.css/master/normalize.css')
+    link(rel='stylesheet', href='//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 about.mizucoffee.net
+    div
+      a(href="/") EN
+      |  | 
+      a(href="/index_ja.html") JA
+    hr
+    h2= cap.profile
+    div.img-box
+      img(src="/image/suwako.png")
+      img.anim(src="/image/hatsuyuki.png")
+    p.text
+      | #{cap.nickname}:  #{data.nickname}
+      br
+      | #{cap.account}:  #{data.account}
+      br
+      | #{cap.name}:  #{data.name}
+    br
+    h2= cap.motto
+    div.motto.text= data.motto
+    br
+    br
+    h2= cap.like
+    ul.text
+      each item in data.like
+        li= item

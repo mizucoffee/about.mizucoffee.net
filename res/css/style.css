@@ -1,0 +1,45 @@
+body {
+  margin: 24px;
+  text-align: center;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Mplus 1p','Arial', sans-serif;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.motto {
+  font-style: italic;
+  border-bottom: 1px solid #606c79;
+  height: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.img-box {
+  margin: 0 auto;
+  position: relative;
+  width: 256px;
+  height: 256px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 256px;
+}
+
+.anim {
+  opacity: 0;
+  animation: fade 4s linear 0s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
